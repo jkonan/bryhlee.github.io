@@ -1,0 +1,68 @@
+.navbar-custom {
+	padding: 0px 0px;	
+	margin-bottom: 0px !important;
+    background-color: #E9E9E9 !important;
+}
+
+/* Default Navbar links */
+.navbar-default .navbar-nav > li > a {
+    border-bottom:2px solid #E9E9E9 !important;
+    font-family:'Montserrat', sans-serif !important;
+    color: black !important;
+}
+/* Selected Navbar Link */
+.navbar-default .navbar-nav > li > a:focus {
+    border-bottom:2px solid #000000 !important;
+    font-family:'Montserrat', sans-serif !important;
+}
+
+/* Selected Navbar Link (Collapse) */
+.navbar-default .navbar-collapse-in .navbar-nav > li > a:focus {
+    font-family:'Montserrat', sans-serif !important;
+    border-bottom: 0px !important;
+}
+
+
+/* Hover Navbar Link */
+.navbar-default .navbar-nav > li > a:hover {
+    font-family:'Montserrat', sans-serif !important;
+    font-weight: bold;
+}
+
+/* Default Navbar Brand */
+.navbar-brand-custom {
+    font-family: 'Montserrat', sans-serif !important;
+    color: black !important;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+/* Section - Introduction */
+#introduction {
+    padding-top: 300px; 
+    padding-bottom: 200px;
+    background-color: #3299BB
+}
+
+.intro-custom-style {
+    font-size: 40px;
+    color: white;
+    font-family:'Montserrat', sans-serif !important;
+}
+
+/* Section - Projects */
+#projects {
+    padding-top: 200px; 
+    padding-bottom: 200px;
+    background-color: #FF9900
+}
+
+/* Section - Resume */
+#resume {
+    padding-top: 200px; 
+    padding-bottom: 200px;
+    background-color: white;
+}
