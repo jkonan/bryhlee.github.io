@@ -17,7 +17,7 @@
 }
 
 /* Selected Navbar Link (Collapse) */
-.navbar-default .navbar-collapse-in .navbar-nav > li > a:focus {
+.navbar-default .navbar-collapse in .navbar-nav > li > a:focus {
     font-family:'Montserrat', sans-serif !important;
     border-bottom: 0px !important;
 }
