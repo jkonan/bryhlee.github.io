@@ -6,9 +6,11 @@
 	<!-- Load css -->
 	<link rel="stylesheet" href="css/bootstrap.css"></link>
 	<link rel="stylesheet" href="css/style.css"></link>
+	<link rel="stylesheet" href="css/simple-text-rotator.css"></link>
 	
 	<!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -26,6 +28,7 @@
     		<div class="collapse navbar-collapse" id="myNavbar">
       			<ul class="nav navbar-nav navbar-right navbar-custom-bar" >
         			<li><a href="#introduction">INTRODUCTION</a></li>
+					<li><a href="#about">ABOUT</a></li>
         			<li><a href="#projects">PROJECTS</a></li> 
         			<li><a href="#resume">RESUME</a></li> 
 					<li><a href="#contact">CONTACT</a></li>
@@ -38,12 +41,36 @@
 	<!-- Start Introudction -->
 	<section type="section" id="introduction">
 		<div class="container-fluid">
-			<div class="col-md-6 col-centered intro-custom-style">
-				<center>Hi! Welcome to my page.</center>
+			<div class="row">
+				<div class="col col-md-6 col-centered intro-header">
+					<center>Hello, I'm Bryson.</center>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-md-5 col-centered intro-text">
+					<center><i>I'm a software engineer specializing in high performance systems programming and pipeline engineering.</i></center>
+				</div>
 			</div>
 		</div>
 	</section>
 	<!-- End Introduction -->
+	
+	<!-- Start About -->
+	<section type="section" id="about">
+		<div class="container-fluid">
+			<div class="col-md-3 col-centered" style="padding-bottom: 60px">
+				<center><h1><span class="rotate">Engineer.,Developer.,Programmer.,Designer.,Coder.</span></h1></center>
+			</div>
+			<div class="col-sm-2 col-md-offset-3" >
+				<h2>Bryson Lee</h2><br />
+				<img src="media/copy2_cropped.jpg" class="img-rounded" width="260" height="260">
+			</div>
+			<div class="col-md-4" >
+				<h2>Biography</h2>
+			</div>
+		</div>
+	</section>
+	<!-- End About -->
 	
 	<!-- Start Projects -->
 	<section type="section" id="projects">
@@ -82,7 +109,9 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/simple-text-rotator.js"></script>
 <script> 
+/* Smooth Scroll Links */
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -96,6 +125,12 @@ $(function() {
       }
     }
   });
+});
+/* Text Rotation */
+$(".rotate").textrotator({
+  animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+  separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+  speed: 2000 // How many milliseconds until the next word show.
 });
 </script>
 </html>

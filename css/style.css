@@ -4,6 +4,11 @@
     background-color: #E9E9E9 !important;
 }
 
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
 /* Default Navbar links */
 .navbar-default .navbar-nav > li > a {
     border-bottom:2px solid #E9E9E9 !important;
@@ -35,24 +40,57 @@
     color: black !important;
 }
 
-.col-centered {
-    float: none;
-    margin: 0 auto;
-}
-
 /* Section - Introduction */
 #introduction {
-    padding-top: 150px; 
-    padding-bottom: 400px;
+    padding-top: 180px; 
+    padding-bottom: 130px;
     background-color: #3299BB
 }
 
-.intro-custom-style {
+.intro-header {
     font-size: 60px !important;
     color: white !important;
     font-weight: bold;
     font-family:'Montserrat', sans-serif !important;
 }
+
+.intro-text {
+    font-size: 32px !important;
+    color: white !important;
+    padding-top: 60px;
+    padding-bottom: 0px;
+    font-weight: bold;
+    font-family: 'Slabo 27px', serif;
+}
+
+/* Section - About */
+#about {
+    padding-top: 90px; 
+    padding-bottom: 70px;
+    background-color: #F7F5C2
+}
+
+#about h1 {
+    font-size: 32px;
+    color: 333333;
+    font-weight: bold;
+    font-family:'Montserrat', sans-serif;
+}
+
+#about h2{
+    font-size: 24px;
+    color:#333333;
+    font-weight: bold;
+    font-family:'Montserrat', sans-serif;
+}
+
+#about p{
+    font-size: 24px;
+    color:#333333;
+    font-weight: bold;
+    font-family:'Montserrat', sans-serif;
+}
+
 
 /* Section - Projects */
 #projects {
