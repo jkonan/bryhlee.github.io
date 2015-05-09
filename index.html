@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+	
 <head>
 	<!-- meta tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,9 +23,20 @@
 	<!-- Preloaded JS-->
 	<script src="js/snap.svg-min.js"></script>
 	<script src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript">
+	$(window).load( setTimeout(function() {
+		$(".loader").fadeOut("slow");
+	}, 500));
+	</script>
 </head>
 
 <body>
+	<!-- Preloader -->
+	<div class="loader">
+		<div class="loader-text">
+			<p3>BRYSON LEE</p3>
+		</div>
+	</div>
 	<!-- start navbar -->
 	<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
 		<div class="container">
@@ -40,6 +52,7 @@
       			<ul class="nav navbar-nav navbar-right navbar-custom-bar" >
         			<li><a href="#introduction">INTRODUCTION</a></li>
 					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#skills">SKILLS</a></li>
         			<li><a href="#projects">PROJECTS</a></li> 
         			<li><a href="#resume">RESUME</a></li> 
 					<li><a href="#contact">CONTACT</a></li>
@@ -129,15 +142,25 @@
 	</section>
 	<!-- End About -->
 	
-	<!-- Skills -->
-	<section type="section" id="What I'm Good At'">
+	<!-- Start divider-contact-->
+	<section type="section" id="divider-contact">
+		<div class="container-fluid">
+			<div class="col-md-6 col-centered">
+				<center>I'm more busy then ever.</center>
+			</div>
+		</div>
+	</section>
+	<!-- End divider-contact -->
+	
+	<!-- Start Skills -->
+	<section type="section" id="skills">
 		<div class="container-fluid">
 			<div class="col-md-6 col-centered">
 				<center>What I'm Good At</center>s
 			</div>
 		</div>
 	</section>
-	<!-- Skills -->
+	<!-- End Skills -->
 	
 	<!-- Start Projects -->
 	<section type="section" id="projects">
