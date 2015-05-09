@@ -13,13 +13,27 @@
 	<link rel="stylesheet" href="css/bootstrap.css"></link>
 	<link rel="stylesheet" href="css/style.css"></link>
 	<link rel="stylesheet" href="css/simple-text-rotator.css"></link>
+	<link rel="stylesheet" href="css/animate.css"></link>
 	
 	<!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+		
+	<!-- Preloaded JS-->
+	<script src="js/snap.svg-min.js"></script>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	<script>
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+	</script>
 </head>
 
 <body>
+	<!-- Preload -->
+	<div class="se-pre-con"></div>
 	<!-- start navbar -->
 	<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
 		<div class="container">
@@ -48,7 +62,7 @@
 	<section type="section" id="introduction">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-6 col-centered intro-header">
+				<div class="col-md-6 col-centered intro-header wow bounceInDown">
 					<center>Hello, I'm Bryson.</center>
 				</div>
 			</div>
@@ -63,17 +77,24 @@
 	
 	<!-- Start Intro-divider -->
 	<section type="section" id="intro-divider">
-		<div class="container-fluid">
-			<div class="row" style="text-align:center;">
-				<div class="col-md-2 col-centered-inline">
-					<center>Engineer.</center>
-				</div>
-				<div class="col-md-2 col-centered-inline">
-					<center>Developer.</center>
-				</div>
-				<div class="col-md-2 col-centered-inline">
-					<center>Programmer.</center>
-				</div>
+		<div class="container">
+			<div class="col-md-1 col-md-offset-1 hidden-xs">
+				<center><img src="media/glyphs/settings.png" width="50px" height="50px"></img></center>
+			</div>
+			<div class="col-md-2 text-center-xs ">
+				Engineer.
+			</div>
+			<div class="col-md-1 hidden-xs ">
+				<center><img src="media/glyphs/pen.png" width="50px" height="50px"></img></center>
+			</div>
+			<div class="col-md-2 text-center-xs ">
+				Developer.
+			</div>
+			<div class="col-md-1 hidden-xs" >
+				<center><img src="media/glyphs/display.png" width="50px" height="50px"></img></center>
+			</div>
+			<div class="col-md-2 text-center-xs ">
+				Programmer.
 			</div>
 		</div>	
 	</section>
@@ -83,12 +104,31 @@
 	<section type="section" id="about">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 col-sm-6 col-xs-12" >
-					<h2>Bryson Lee</h2>
-					<img src="media/copy2_cropped.jpg" class="img-rounded" width="260" height="260">
+				<div class="wow bounceInLeft col-md-4 col-sm-6 col-xs-12 text-center-xs center-img-xs">
+					<div class="row">
+						<h2>BRYSON LEE</h2>
+						<img src="media/copy2_cropped.jpg" class="img-rounded" width="290" height="290">
+					</div>
+					<div class="row" style="padding-top: 10px;">
+						<h2>SOCIAL MEDIA</h2>
+					</div>
+					<div class="row" >
+						<div class="wow bounceInLeft col-md-2 col-xs-3 text-center-xs center-img-xs" style="padding: 0px">
+							<a href="https://www.linkedin.com/pub/bryson-lee/b2/32a/b0a"><img src="media/icons/linkedin-dreamstale45.png" height="50px" length="50px"></img></a>
+						</div>
+						<div class="wow bounceInLeft col-md-2 col-xs-3 text-center-xs center-img-xs " style="padding: 0px">
+							<a href="https://www.facebook.com/bryson.lee.is.really.awesome"><img src="media/icons/facebook-dreamstale25.png" height="50px" length="50px"></img></a>
+						</div>
+						<div class="wow bounceInLeft col-md-2 col-xs-3 text-center-xs center-img-xs" style="padding: 0px">
+							<a href="https://github.com/bryhlee"><img src="media/icons/github2-dreamstale35.png" height="50px" length="50px"></img></a>
+						</div>
+						<div class="wow bounceInLeft col-md-2 col-xs-3 text-center-xs center-img-xs" style="padding: 0px">
+							<a href="http://stackoverflow.com/users/4722561/bhlee"><img src="media/icons/overflow-dreamstale53.png" height="50px" length="50px"></img></a>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-8 col-sm-6 col-xs-12" >
-					<h2>Biography</h2>
+				<div class="wow bounceInRight col-md-8 col-sm-6 col-xs-12 text-center-xs " >
+					<h2>PROFILE</h2>
 					<p3>Hi! My name is Bryson Lee. I'm currently a first year Computer Science and Engineering student at Santa Clara University. Let me be the first to say "welcome" to my humble abode.</p3>
 					<p3>I first began experimenting with code during my middle school years, using scripting tools to modify games like <i>Warcraft 3</i> and <i>Age of Mythology</i>. I curled up behind my father's old Dell, spending Saturday afternoons dillegnetly debugging what are now considered obsolete scripting languages. Though it was my first taste of real code, I bring the same passion I had for creation and devotion to developing new software.</p3>	
 					<p3>Today, I work on a much different level. I am developer who has worked on software, databases, tools, video games, and web applications. I particpate in large-scale development projects, engineering core code to support large systems, while finding and solving solutions to some of the toughest problems. Though my specializations include pipeline engineering aswell as tools and software development, I am also an active leader. Taking initiative wherever I go, I not only seek the opprotunity to improve myself but to innovate what already exists.</p3>			
@@ -97,6 +137,16 @@
 		</div>
 	</section>
 	<!-- End About -->
+	
+	<!-- Skills -->
+	<section type="section" id="What I'm Good At'">
+		<div class="container-fluid">
+			<div class="col-md-6 col-centered">
+				<center>What I'm Good At</center>s
+			</div>
+		</div>
+	</section>
+	<!-- Skills -->
 	
 	<!-- Start Projects -->
 	<section type="section" id="projects">
@@ -131,12 +181,14 @@
 </body>
 
 <!-- Load js -->
-<script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/simple-text-rotator.js"></script>
+<script src="js/wow.js"></script>
 <script> 
+/* Inti WOW.js */
+new WOW().init();
 /* Smooth Scroll Links */
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
