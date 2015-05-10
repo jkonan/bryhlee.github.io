@@ -185,23 +185,16 @@
 #intro-divider {
     padding-top: 20px; 
     padding-bottom: 20px;
-    background-color: #F8F8F8;
-    border-bottom: 5px solid grey;
+    background-color: #333333;
     font-family: 'Slabo 27px',serif;
     font-weight: bold !important;
-    color: black;
+    color: white;
     font-size:32px;
-}
-
-.intro-divider-text {
-    font-family: 'Monteserrat',serif !important;
-    font-weight: bold !important;
-    color: black;
-    font-size:24px;
 }
 
 /* Section - About */
 #about {
+    
     padding-top: 40px; 
     padding-bottom: 40px;
     background-color: white;
@@ -217,7 +210,7 @@
 #about h2{
     padding-bottom: 14px;
     display: block;
-    font-size: 52x;
+    font-size: 32px;
     color:#333333;
     font-weight: bold;
     font-family:'Montserrat', sans-serif;
@@ -233,37 +226,77 @@
 
 /* Section - divider-contact*/
 #divider-contact {
-    padding-top: 20px; 
-    padding-bottom: 20px;
-    background-color: #424242;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-    font-family: 'Slabo 27px',serif;
-    font-weight: bold !important;
-    color: white;
-    font-size:32px;
-}
-
-.divider-contact {
-    font-family: 'Monteserrat',serif !important;
+    padding-top: 60px; 
+    padding-bottom: 60px;
+    background-color: #F8F8F8;
+    font-family: 'Montserrat', serif;
     font-weight: bold !important;
     color: black;
-    font-size:24px;
+    font-size:18px;
+    border-top: 4px solid #E6E6E6;
+    border-bottom: 4px solid #E6E6E6;
 }
 
+#divider-contact .text-pad {
+    padding: 5px 0px;
+}
 
 /* Section - Skills */
 #skills {
-    padding-top: 300px; 
-    padding-bottom: 300px;
-    background-image: url(../media/paralax.jpg);
+    padding-top: 60px; 
+    padding-bottom: 60px;
+    background-image: url(../media/paralax_white.jpg);
     background-repeat:no-repeat;
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
     background-size:cover;
     background-position:center;
-    border-bottom:5px solid black !important;
+}
+
+#skills h1{
+    
+    display: block;
+    font-size: 40px;
+    color:#333333;
+    font-weight: bold;
+    font-family:'Montserrat', sans-serif;
+}
+
+#skills h2{
+    padding-bottom: 14px;
+    display: block;
+    font-size: 24px;
+    color:#333333;
+    font-weight: bold;
+    font-family:'Montserrat', sans-serif;
+    margin: 0px !important;
+}
+
+#skills p3 {
+    padding-bottom: 14px;
+    display: block;
+    font-size: 24px;
+    color:#333333;
+    font-family:'Montserrat', sans-serif;
+}
+
+/* Section - divider-skills*/
+#divider-skills {
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    background-color: #424242;
+    font-family: 'Slabo 27px',serif;
+    font-weight: bold !important;
+    color: white;
+    font-size:32px;
+}
+
+/* Section - Projects */
+#projects {
+    padding-top: 200px; 
+    padding-bottom: 200px;
+    background-color: #FF9900
 }
 
 /* Section - Resume */
@@ -271,14 +304,6 @@
     padding-top: 200px; 
     padding-bottom: 200px;
     background-color: white;
-}
-
-
-/* Section - Projects */
-#projects {
-    padding-top: 200px; 
-    padding-bottom: 200px;
-    background-color: #FF9900
 }
 
 /* Section - Resume */
