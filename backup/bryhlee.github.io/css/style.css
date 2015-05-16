@@ -169,14 +169,7 @@
 #introduction {
     padding-top: 180px; 
     padding-bottom: 130px;
-    
-    background-image: url(../media/paralax_dark.jpg);
-    background-repeat:no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-    background-position:center;
+    background-color: #3299BB
 }
 
 .intro-header {
@@ -199,7 +192,7 @@
 #intro-divider {
     padding-top: 20px; 
     padding-bottom: 20px;
-    background-color: #282828;
+    background-color: #333333;
     font-family: 'Slabo 27px',serif;
     font-weight: bold !important;
     color: white;
@@ -259,7 +252,13 @@
 #skills {
     padding-top: 60px; 
     padding-bottom: 60px;
-    background-color: white;
+    background-image: url(../media/paralax_white.jpg);
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
 }
 
 #skills h1{
@@ -284,7 +283,7 @@
 #skills p3 {
     padding-bottom: 14px;
     display: block;
-    font-size: 20px;
+    font-size: 24px;
     color:#333333;
     font-family:'Montserrat', sans-serif;
 }
@@ -293,7 +292,7 @@
 #divider-skills {
     padding-top: 20px; 
     padding-bottom: 20px;
-    background-color: #282828;
+    background-color: #424242;
     font-family: 'Slabo 27px',serif;
     font-weight: bold !important;
     color: white;
