@@ -21,6 +21,12 @@
     color: black !important;
 }
 
+/* Custom Owl Carousel Styles */
+#slider .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 /* Responsive Alignment */
 .text-left-not-xs, .text-left-not-sm, .text-left-not-md, .text-left-not-lg {
@@ -295,16 +301,17 @@
 
 /* Section - Projects */
 #projects {
-    padding-top: 200px; 
-    padding-bottom: 200px;
+    padding-top: 50px; 
+    padding-bottom: 50px;
     background-color: #FF9900
 }
 
-/* Section - Resume */
-#resume {
-    padding-top: 200px; 
-    padding-bottom: 200px;
-    background-color: white;
+#projects h1 {
+    display: block;
+    font-size: 40px;
+    color:#333333;
+    font-weight: bold;
+    font-family:'Montserrat', sans-serif;
 }
 
 /* Section - Resume */
@@ -314,7 +321,7 @@
     background-color: white;
 }
 
-/* Section - Resume */
+/* Section - Contact */
 #contact {
     padding-top: 200px; 
     padding-bottom: 200px;
